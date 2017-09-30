@@ -11,4 +11,7 @@ mind before writing the actual code, 2) earning you points if the description is
 ### Deliverables
 `Homework 1.ipynb` notebook with disclosed output for each cell. 
 
+### Deadline: October 11, 23:59
+
+
 Credits to [Michele Catasta](https://github.com/pirroh).
