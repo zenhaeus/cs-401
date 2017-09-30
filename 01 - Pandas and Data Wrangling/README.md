@@ -13,5 +13,6 @@ mind before writing the actual code, 2) earning you points if the description is
 
 #### Deadline: October 11, 23:59
 
+#
 
-Credits to [Michele Catasta](https://github.com/pirroh).
+Credits to [Chris Fonnesbeck](https://github.com/fonnesbeck) and [Michele Catasta](https://github.com/pirroh).
