@@ -2,10 +2,6 @@
 .DS_Store
 .idea/
 
-## Data
-*.csv
-*.txt
-
 ## -- Python from here --
 
 # Byte-compiled / optimized / DLL files
