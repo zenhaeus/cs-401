@@ -1,64 +1,43 @@
-# Applied Data Analysis - Project Milestone 1
+# Applied Data Analysis - Project
 
 ## Abstract
 
-The age of information makes it seem as though conflict and wars are, and always will be, ever growing parts of our lives. In this project we will analyze a dataset containing over 135,000 geolocated entries about conflicts between different parties, ranging from the year of 1990, to the year of 2016.
+The age of information makes it seem as though conflict and wars are, and always will be, ever growing part of our lives. We often feel overwhelmed by the amount and scope of information that is accessible and directed towards us, in turn rendering us indifferent to the consequences and casualties of the war.
 
-We will answer some questions about the nature of conflicts that have occurred during the life of an average EPFL student. We will explore what parties have been most involved in the conflicts and how often are certain regions involved in the conflicts. Furthermore, we will aim to observe significant changes through certain time periods with regard to frequency of conflicts and their location. Finally, we will conduct a thorough statistical analysis of the relevant characteristics of said conflicts.
+Civilians are the greatest casualty of any war, and casualties are not always measured in body count. Civil liberties and political freedoms are and should be enjoyed by the people from all around the world, and conflicts always bring changes to freedom of expression, for better or worse.
 
-The goal of our project is to use the accompanied exhaustive dataset to provide a better understanding of the conflicts through their types, relevant characteristics and locations.
+In this project we want to focus on the continent of Africa, which we feel is underreported in the context of occurring conflicts and casualties. We will utilize UDCP dataset documenting individual events of organized violence, empowered by the Freedom House 'Freedom in the World' yearly surveys and the Human Development Index as measured by the UN.
+
+Our goal is to produce a report with an overarching story about impacts of conflicts on the African continent in the observed period from 1990 to 2015, with the focus on civilian populations - what are the long term consequences that conflicts have on the development of the civilian population.
 
 ## Research questions
 
-Statistical analysis that will dive deeper to the regional level, as the data shows to be more relevant for certain regions:
+* Is conflict frequency and impact negatively correlated with the HDI and the state of human rights in the African nations?
+* How are different types of conflict impacting HDI and the state of human rights in the African nation?
+* Does peacetime result in growth of HDI and improvement of political and personal liberties? If so, what is the nature of growth over time?
 
-* Biggest actors in terms of:
-    * Number of conflicts for one party
-    * Number of conflicts between two parties
-* Death toll:
-    * In a prolonged conflict between parties
-    * In a single incident
-    * By time period
+Possible case studies:
 
-Exploratory analysis:
-
-* What are the parties that are engaged in the conflict, and what is the duration of the conflict in question (violent incident, prolonged war campaign etc.)?
-* Exploration of the geographical proximity of the events that took place through regions in which they happened.
-* Exploration of changes in the conflict frequency in regards to types of warring parties and region.
-
-Questions that will be further discussed, and included if appropriate:
-
-* Can alliances be inferred from the data?
-* Can the available data about the conflicts be connected with the economic context of the warring parties in a meaningful way?
+* Some African countries have been ruled by dictators under fake cover of the democratic system for long periods of time, so political and personal liberties could have actually deteriorated, while HDI could have steadily grown. We would present a country like Zimbabwe in this context as a type of small case study, where we would provide additional context regarding the political climate throughout observed time period.
 
 ## Dataset
 
-We decided to use the UCDP Georeferenced Event Dataset (GED) Global version 17.1(2016) for our project.
-The dataset description present on the website gives us a better understanding of the data present: ‘The basic unit of analysis for the UCDP GED dataset is the ‘event’, i.e. an individual incident (phenomenon) of lethal violence occurring at a given time and place. More specifically, we define an event as: ‘An incident where armed force was by an organised actor against another organized actor, or against civilians, resulting in at least 1 direct death at a specific location and a specific date’. The dataset contains 135,181 events. GED 17.1 is a global dataset that covers the entirety of the Globe (excluding Syria) between 1989-01-01 and 2016-12-31.’ (ref. ‘Sundberg, Ralph, and Erik Melander, 2013, “Introducing the UCDP Georeferenced Event Dataset”, Journal of Peace Research, vol.50, no.4, 523-532’).
+1. Uppsala Conflict Data Program's georeferenced event dataset, [Global Version 17.1 (2016)](http://www.ucdp.uu.se/downloads/ged/ged171-xlsx.zip), is the central dataset used in our project. Dataset covers individual events of organized violence - phenomena of lethal violence occurring at a given time and place. There are 135,181 events present in the dataset covering the entirety of the Globe (excluding Syria), spanning from 01/01/1989 to 31/12/2016. This project makes use of the events which occurred on the African continent throughout the period of 26 years (1990-2015), or roughly 35,437 events. Events documented in the dataset will be aggregated by region, and together with information about the Human Development Index (HDI), Political Freedom score and Civil Liberties score, further analyzed and visualized on per-region basis.
 
-We can download the dataset in _xlsx_ format from the [website](http://ucdp.uu.se/downloads/) and at first look we see that it contains all the data expected for our analysis. At this stage of the project, the dataset has not been enriched or otherwise altered for further analysis.
+1. Freedom House is a U.S.-based U.S. Government-funded non-governmental organization (NGO) that conducts research and advocacy on democracy, political freedom, and human rights. The organization's annual *Freedom in the World* reports on the state of political freedoms and civil liberties enjoyed in different countries form our second dataset and can be obtained [here](https://freedomhouse.org/sites/default/files/FIW2017_Data.zip). We will focus our attention on the file `FH_Country_and_Territory_Ratings_and_Statuses_1972-2016.xls` which contains information about political freedom and civil liberties scores for individual countries throughout the period of 1972-2016. Moreover, we are only interested in the scores of African countries throughout the period of 1990-2015.
 
-Some of the attributes that we will use and want to highlight are:
+1. The Human Development Index (HDI) is a composite statistic (composite index) of life expectancy, education, and per capita income indicators, which are used to rank countries into four tiers of human development. A country scores higher HDI when the lifespan is higher, the education level is higher, and the GDP per capita is higher. Our final dataset is Human Development report by the UN that includes calculated Human Development Indices for the years 1990 through 2015. Naturally, we are interested in the values associated countries from the African continent. Human Development Index obtains value in the range [0,1], 1 being best possible value.
 
-* ‘year’ - identifies the year of the event
-* ‘type_of_violence’ - represents the type of conflict (e.g. state based or one-sided violence)
-* ‘side_a_new_id’ and ‘side_b_new_id’ - attributes that indicate the two actors of the conflict
-* ‘latitude‘, ‘longitude’ - identify where the conflicts took place
+More detailed discussion on the values present and assumptions introduced by these datasets can be found in project's notebook.
 
-## A list of internal milestones up until project milestone 2
+## A list of internal milestones up until project milestone 3
 
-1. Wednesday, November 10th:
-    * Data import, cleansing and parsing into appropriate formats.
-    * Consideration of statistics that will be used throughout the project.
-    * Consideration and discussion about libraries that will be used throughout the project.
-
-2. Wednesday, November 17th:
-    * Understanding of the data distribution. 
-    * Calculating statistics, correlations and appropriate plots.
-
-3. Wednesday, November 24th:
-    * Focus on data visualization with emphasis on map visualization.
+1. Friday, December 1st:
+    * Finalization of the project report residing in Jupyter notebook.
+    * Code polish.
+1. Friday, December 8th:
+    * Finalization of the data story (format to be decided).
 
 ## Questions for TAs
 
-Does the overarching story behind the project need to also be present inside the Jupyter notebook with all the code.
+*Nothing here*
