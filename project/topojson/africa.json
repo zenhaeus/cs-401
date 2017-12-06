@@ -1,6 +1,6 @@
 {
-type: "Topology",
-arcs: [
+"type": "Topology",
+"arcs": [
 [
 [
 4143,
@@ -4600,22 +4600,22 @@ arcs: [
 ]
 ]
 ],
-transform: {
-scale: [
+"transform": {
+"scale": [
 0.011840545025277828,
 0.011761343021418996
 ],
-translate: [
+"translate": [
 -25.091177335660404,
 -34.80859368564344
 ]
 },
-objects: {
-continent_Africa_subunits: {
-type: "GeometryCollection",
-geometries: [
+"objects": {
+"continent_Africa_subunits": {
+"type": "GeometryCollection",
+"geometries": [
 {
-arcs: [
+"arcs": [
 [
 [
 0,
@@ -4632,28 +4632,28 @@ arcs: [
 ]
 ]
 ],
-type: "MultiPolygon",
-properties: {
-type: "Sovereign country",
-geounit: "Angola"
+"type": "MultiPolygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Angola"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 7,
 8,
 9
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Burundi"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Burundi"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 10,
 11,
@@ -4662,14 +4662,14 @@ arcs: [
 14
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Benin"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Benin"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 15,
 -14,
@@ -4679,35 +4679,35 @@ arcs: [
 19
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Burkina Faso"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Burkina Faso"
 }
 },
 {
-type: null,
-properties: {
-type: "Geo subunit",
-geounit: "French Southern and Antarctic Lands"
+"type": null,
+"properties": {
+"type": "Geo subunit",
+"geounit": "French Southern and Antarctic Lands"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 20,
 21,
 22
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Botswana"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Botswana"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 23,
 24,
@@ -4717,14 +4717,14 @@ arcs: [
 28
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Central African Republic"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Central African Republic"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -19,
 31,
@@ -4734,14 +4734,14 @@ arcs: [
 35
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Ivory Coast"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Cote d'Ivoire"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -28,
 36,
@@ -4752,14 +4752,14 @@ arcs: [
 41
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Cameroon"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Cameroon"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 42,
 43,
@@ -4774,14 +4774,14 @@ arcs: [
 -26
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Democratic Republic of the Congo"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Democratic Republic of the Congo"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -49,
 -7,
@@ -4791,28 +4791,28 @@ arcs: [
 -27
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Republic of Congo"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Republic of the Congo"
 }
 },
 {
-type: null,
-properties: {
-type: "Sovereign country",
-geounit: "Comoros"
+"type": null,
+"properties": {
+"type": "Sovereign country",
+"geounit": "Comoros"
 }
 },
 {
-type: null,
-properties: {
-type: "Sovereign country",
-geounit: "Cape Verde"
+"type": null,
+"properties": {
+"type": "Sovereign country",
+"geounit": "Cabo Verde"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 51,
 52,
@@ -4820,14 +4820,14 @@ arcs: [
 54
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Djibouti"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Djibouti"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 55,
 56,
@@ -4839,28 +4839,28 @@ arcs: [
 62
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Algeria"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Algeria"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 63,
 64,
 65
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Egypt"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Egypt"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -54,
 66,
@@ -4868,26 +4868,26 @@ arcs: [
 68
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Eritrea"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Eritrea"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 69
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Geo subunit",
-geounit: "Spain"
+"type": "Polygon",
+"properties": {
+"type": "Geo subunit",
+"geounit": "Spain"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -53,
 70,
@@ -4899,21 +4899,21 @@ arcs: [
 -67
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Ethiopia"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Ethiopia"
 }
 },
 {
-type: null,
-properties: {
-type: "Geo subunit",
-geounit: "French Southern and Antarctic Lands"
+"type": null,
+"properties": {
+"type": "Geo subunit",
+"geounit": "French Southern and Antarctic Lands"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -51,
 76,
@@ -4921,14 +4921,14 @@ arcs: [
 -38
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Gabon"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Gabon"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 78,
 79,
@@ -4938,14 +4938,14 @@ arcs: [
 -18
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Ghana"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Ghana"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 81,
 -35,
@@ -4956,76 +4956,76 @@ arcs: [
 86
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Guinea"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Guinea"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 87,
 88
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Gambia"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Gambia"
 }
 },
 {
-type: null,
-properties: {
-type: "Geo subunit",
-geounit: "Equatorial Guinea"
+"type": null,
+"properties": {
+"type": "Geo subunit",
+"geounit": "Equatorial Guinea"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 89,
 90,
 -86
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Guinea Bissau"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Guinea-Bissau"
 }
 },
 {
-type: null,
-properties: {
-type: "Geo subunit",
-geounit: "Equatorial Guinea"
+"type": null,
+"properties": {
+"type": "Geo subunit",
+"geounit": "Equatorial Guinea"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -78,
 91,
 -39
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Geo subunit",
-geounit: "Equatorial Guinea"
+"type": "Polygon",
+"properties": {
+"type": "Geo subunit",
+"geounit": "Equatorial Guinea"
 }
 },
 {
-type: null,
-properties: {
-type: "Geo subunit",
-geounit: "French Southern and Antarctic Lands"
+"type": null,
+"properties": {
+"type": "Geo subunit",
+"geounit": "French Southern and Antarctic Lands"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -74,
 92,
@@ -5035,14 +5035,14 @@ arcs: [
 96
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Kenya"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Kenya"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -34,
 97,
@@ -5050,14 +5050,14 @@ arcs: [
 -83
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Liberia"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Liberia"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -65,
 99,
@@ -5068,26 +5068,26 @@ arcs: [
 103
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Libya"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Libya"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 104
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Lesotho"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Lesotho"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 105,
 106,
@@ -5098,26 +5098,26 @@ arcs: [
 110
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Morocco"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Morocco"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 111
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Madagascar"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Madagascar"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 112,
 -20,
@@ -5128,14 +5128,14 @@ arcs: [
 -59
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Mali"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Mali"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 115,
 116,
@@ -5147,14 +5147,14 @@ arcs: [
 122
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Mozambique"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Mozambique"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 123,
 124,
@@ -5163,35 +5163,35 @@ arcs: [
 -115
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Mauritania"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Mauritania"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -121,
 126,
 127
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Malawi"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Malawi"
 }
 },
 {
-type: null,
-properties: {
-type: "Geo unit",
-geounit: "Mayotte"
+"type": null,
+"properties": {
+"type": "Geo unit",
+"geounit": "Mayotte"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 128,
 -23,
@@ -5200,14 +5200,14 @@ arcs: [
 -2
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Namibia"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Namibia"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 131,
 132,
@@ -5218,14 +5218,14 @@ arcs: [
 -102
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Niger"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Niger"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 133,
 -41,
@@ -5234,21 +5234,21 @@ arcs: [
 -133
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Nigeria"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Nigeria"
 }
 },
 {
-type: null,
-properties: {
-type: "Geo unit",
-geounit: "Madeira"
+"type": null,
+"properties": {
+"type": "Geo unit",
+"geounit": "Madeira"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 135,
 -10,
@@ -5256,14 +5256,14 @@ arcs: [
 136
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Rwanda"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Rwanda"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -61,
 -126,
@@ -5271,14 +5271,14 @@ arcs: [
 -110
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Indeterminate",
-geounit: "Western Sahara"
+"type": "Polygon",
+"properties": {
+"type": "Indeterminate",
+"geounit": "Western Sahara"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 138,
 -68,
@@ -5290,14 +5290,14 @@ arcs: [
 -64
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Sudan"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Sudan"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -75,
 -97,
@@ -5307,40 +5307,40 @@ arcs: [
 -140
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "South Sudan"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "South Sudan"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -106,
 142
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Geo subunit",
-geounit: "Spain"
+"type": "Polygon",
+"properties": {
+"type": "Geo subunit",
+"geounit": "Spain"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -108,
 143
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Geo subunit",
-geounit: "Spain"
+"type": "Polygon",
+"properties": {
+"type": "Geo subunit",
+"geounit": "Spain"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -114,
 -87,
@@ -5351,28 +5351,28 @@ arcs: [
 -124
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Senegal"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Senegal"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -99,
 146,
 -84
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Sierra Leone"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Sierra Leone"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 147,
 -71,
@@ -5380,14 +5380,14 @@ arcs: [
 148
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Indeterminate",
-geounit: "Somaliland"
+"type": "Polygon",
+"properties": {
+"type": "Indeterminate",
+"geounit": "Somaliland"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 149,
 -72,
@@ -5395,14 +5395,14 @@ arcs: [
 150
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Geo unit",
-geounit: "Puntland"
+"type": "Polygon",
+"properties": {
+"type": "Geo unit",
+"geounit": "Puntland"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 151,
 -93,
@@ -5410,41 +5410,41 @@ arcs: [
 -150
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Geo unit",
-geounit: "Somalia"
+"type": "Polygon",
+"properties": {
+"type": "Geo unit",
+"geounit": "Somalia"
 }
 },
 {
-type: null,
-properties: {
-type: "Geo subunit",
-geounit: "Sao Tome and Principe"
+"type": null,
+"properties": {
+"type": "Geo subunit",
+"geounit": "Sao Tome and Principe"
 }
 },
 {
-type: null,
-properties: {
-type: "Geo subunit",
-geounit: "Sao Tome and Principe"
+"type": null,
+"properties": {
+"type": "Geo subunit",
+"geounit": "Sao Tome and Principe"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -117,
 152
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Swaziland"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Swaziland"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -141,
 -29,
@@ -5454,14 +5454,14 @@ arcs: [
 -101
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Chad"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Chad"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -13,
 153,
@@ -5469,28 +5469,28 @@ arcs: [
 -17
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Togo"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Togo"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -103,
 -56,
 154
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Tunisia"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Tunisia"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -95,
 155,
@@ -5503,21 +5503,21 @@ arcs: [
 157
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Tanzania"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Tanzania"
 }
 },
 {
-type: null,
-properties: {
-type: "Geo unit",
-geounit: "Zanzibar"
+"type": null,
+"properties": {
+"type": "Geo unit",
+"geounit": "Zanzibar"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -158,
 -137,
@@ -5526,14 +5526,14 @@ arcs: [
 -96
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Uganda"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Uganda"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -118,
 -153,
@@ -5547,14 +5547,14 @@ arcs: [
 -105
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Geo subunit",
-geounit: "South Africa"
+"type": "Polygon",
+"properties": {
+"type": "Geo subunit",
+"geounit": "South Africa"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -127,
 -120,
@@ -5565,14 +5565,14 @@ arcs: [
 -157
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Zambia"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Zambia"
 }
 },
 {
-arcs: [
+"arcs": [
 [
 -119,
 -160,
@@ -5580,10 +5580,10 @@ arcs: [
 -161
 ]
 ],
-type: "Polygon",
-properties: {
-type: "Sovereign country",
-geounit: "Zimbabwe"
+"type": "Polygon",
+"properties": {
+"type": "Sovereign country",
+"geounit": "Zimbabwe"
 }
 }
 ]
