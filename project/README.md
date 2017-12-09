@@ -29,15 +29,3 @@ Possible case studies:
 1. The Human Development Index (HDI) is a composite statistic (composite index) of life expectancy, education, and per capita income indicators, which are used to rank countries into four tiers of human development. A country scores higher HDI when the lifespan is higher, the education level is higher, and the GDP per capita is higher. Our final dataset is Human Development report by the UN that includes calculated Human Development Indices for the years 1990 through 2015. Naturally, we are interested in the values associated countries from the African continent. Human Development Index obtains value in the range [0,1], 1 being best possible value.
 
 More detailed discussion on the values present and assumptions introduced by these datasets can be found in project's notebook.
-
-## A list of internal milestones up until project milestone 3
-
-1. Friday, December 1st:
-    * Finalization of the project report residing in Jupyter notebook.
-    * Code polish.
-1. Friday, December 8th:
-    * Finalization of the data story (format to be decided).
-
-## Questions for TAs
-
-*Nothing here*
