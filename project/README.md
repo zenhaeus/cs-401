@@ -1,9 +1,5 @@
 # Applied Data Analysis - Project
 
-Hrvoje Busic - Problem formulation, project planning and workload distribution; map visualizations with interactive elements; report proofreading.
-Domenica Verbaro - Crawling the data; data pruning; data visualization via plots; report visualizations.
-Joey Zenhäusern - Code modularization and pruning; writing up the report; reference checkup.
-
 ## Abstract
 
 The age of information makes it seem as though conflict and wars are, and always will be, ever growing part of our lives. We often feel overwhelmed by the amount and scope of information that is accessible and directed towards us, in turn rendering us indifferent to the consequences and casualties of the war.
@@ -33,3 +29,23 @@ Possible case studies:
 1. The Human Development Index (HDI) is a composite statistic (composite index) of life expectancy, education, and per capita income indicators, which are used to rank countries into four tiers of human development. A country scores higher HDI when the lifespan is higher, the education level is higher, and the GDP per capita is higher. Our final dataset is Human Development report by the UN that includes calculated Human Development Indices for the years 1990 through 2015. Naturally, we are interested in the values associated countries from the African continent. Human Development Index obtains value in the range [0,1], 1 being best possible value.
 
 More detailed discussion on the values present and assumptions introduced by these datasets can be found in project's notebook.
+
+## Contributions by the group members
+Hrvoje Busic
+
+* Problem formulation, project planning and workload distribution
+* map visualizations with interactive elements
+* report proofreading.
+
+Domenica Verbaro
+
+* Crawling the data
+* data pruning
+* data visualization via plots
+* report visualizations.
+
+Joey Zenhäusern
+
+* Code modularization and pruning
+* writing up the report
+* reference checkup.
