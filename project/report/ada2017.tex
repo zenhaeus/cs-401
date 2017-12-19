@@ -14,12 +14,16 @@
 %%e.agirre@ehu.es or Sergi.Balari@uab.es
 %% and that of ACL 08 by Joakim Nivre and Noah Smith
 
-\documentclass[11pt]{article}
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
 \usepackage{acl2014}
 \usepackage{times}
-\usepackage{url}
+\usepackage{hyperref}
 \usepackage{latexsym}
+\usepackage{graphicx}
 
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 %\setlength\titlebox{5cm}
 
 % You can expand the titlebox if you need extra space
@@ -28,14 +32,14 @@
 % in the camera-ready version and ask you to change it back.
 
 
-\title{Name of your project}
+\title{Impact of Conflicts on African Civilian Population}
 
-\author{First Author \\
-  {\tt email@domain} \\\And
-  Second Author \\
-  {\tt email@domain} \\\And
-Third Author \\
-{\tt email@domain} \\}
+\author{Hrvoje Bušić \\
+  \small{\tt hrvoje.busic@epfl.ch} \\\And
+  Domenica Verbaro\\
+  \small{\tt domenica.verbaro@epfl.ch} \\\And
+Joey Zenhäusern\\
+\small{\tt joey.zenhausern@epfl.ch} \\}
 
 \date{}
 
@@ -46,250 +50,191 @@ Third Author \\
   what your manuscript should look like. This document is based on the ACL 2014 paper format.
 \end{abstract}
 
-\section{Credits}
-
-This document has been adapted from the instructions for earlier ACL
-proceedings, including those for ACL-2012 by Maggie Li and Michael
-White, those from ACL-2010 by Jing-Shing Chang and Philipp Koehn,
-those for ACL-2008 by Johanna D. Moore, Simone Teufel, James Allan,
-and Sadaoki Furui, those for ACL-2005 by Hwee Tou Ng and Kemal
-Oflazer, those for ACL-2002 by Eugene Charniak and Dekang Lin, and
-earlier ACL and EACL formats. Those versions were written by several
-people, including John Chen, Henry S. Thompson and Donald
-Walker. Additional elements were taken from the formatting
-instructions of the {\em International Joint Conference on Artificial
-  Intelligence}.
-
 \section{Introduction}
 
-The following instructions are directed to the ADA students who decided to prepare a report. Authors are
-required to provide a Portable Document Format (PDF) version of their
-reports. It must be maximum 4-page long, excluding references.
+The age of information makes it seem as though conflict and wars are, and always will be, ever growing part of our lives. We often feel overwhelmed by the amount and scope of information that is accessible and directed towards us, in turn rendering us indifferent to the consequences and casualties of the war.
 
-\section{General Instructions}
+Civilians are the greatest casualty of any war, and casualties are not always measured in body count. Civil liberties and political freedoms are and should be enjoyed by the people from all around the world, and conflicts always bring changes to freedom of expression, for better or worse.
 
-Manuscripts must be in two-column format.  Exceptions to the
-two-column format include the title, authors' names and complete
-addresses, which must be centered at the top of the first page, and
-any full-width figures or tables (see the guidelines in
-Subsection~\ref{ssec:first}). {\bf Type single-spaced.}  Start all
-pages directly under the top margin. See the guidelines later
-regarding formatting the first page.
+In this project we want to focus on the continent of Africa, which we feel is underreported in the context of occurring conflicts and casualties. We will utilize UDCP dataset documenting individual events of organized violence, empowered by the Freedom House `Freedom in the World' yearly surveys and the Human Development Index as measured by the UN.
 
-\subsection{Format of Electronic Manuscript}
-\label{sect:pdf}
+Our goal is to produce a report with an overarching story about impacts of conflicts on the African continent in the observed period from 1990 to 2015, with the focus on civilian populations --- what are the long term consequences that conflicts have on the development of the civilian population.
 
-For the production of the electronic manuscript you must use Adobe's
-Portable Document Format (PDF). PDF files are usually produced from
-\LaTeX\ using the \textit{pdflatex} command. If your version of
-\LaTeX\ produces Postscript files, you can convert these into PDF
-using \textit{ps2pdf} or \textit{dvipdf}. On Windows, you can also use
-Adobe Distiller to generate PDF.
+\section{Specification of regions and country
+names}
 
-Please make sure that your PDF file includes all the necessary fonts
-(especially tree diagrams, symbols, and fonts with Asian
-characters). When you print or create the PDF file, there is usually
-an option in your printer setup to include none, all or just
-non-standard fonts.  Please make sure that you select the option of
-including ALL the fonts. \textbf{Before sending it, test your PDF by
-  printing it from a computer different from the one where it was
-  created.} Moreover, some word processors may generate very large PDF
-files, where each page is rendered as an image. Such images may
-reproduce poorly. In this case, try alternative ways to obtain the
-PDF. One way on some systems is to install a driver for a postscript
-printer, send your document to the printer specifying ``Output to a
-file'', then convert the file to PDF.
+Throughout this report, we will observe the African continent through its
+regions as defined by the United Nations' geoscheme for Africa~\cite{UNGeoscheme}. This geoscheme is used by the UN and
+maintained by the UNSD department for statistical purposes, and defines
+five regions as follows: Northern Africa, Eastern Africa, Southern
+Africa, Western Africa and Central Africa. Although multiple definitions
+of African regions exist, depending on the observed context, we consider
+earlier definition as relevant and appropriate for our statistical
+analysis.
 
-It is of utmost importance to specify the \textbf{A4 format} (21 cm
-x 29.7 cm) when formatting the report. When working with
-{\tt dvips}, for instance, one should specify {\tt -t a4}.
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.3\textwidth]{images/Africa-regions.png}
+    \caption{African regions as defined by UN Geoscheme: North (blue), East (yellow), South (red), Central (pink), West (green)\label{fig:regions}}
+\end{figure}
 
-Print-outs of the PDF file on A4 report should be identical to the
-hardcopy version.
+Due to the use of several datasets from several different data sources,
+some countries have been referenced by different variations on their
+original name in different datasets. This has resulted in need to adjust
+names accross datasets. We have used names of countries as specified by
+the United Nations' geoscheme for Africa as reference accross these
+datasets, while adjusting any difference when needed.
 
+\section{UCDP dataset}
 
-\subsection{Layout}
-\label{ssec:layout}
+Uppsala Conflict Data Program's georeferenced event dataset \cite{Sundberg:13},
+Global Version 17.1 \cite{Codebook2017}, is the central dataset used in our project.
+The dataset covers individual events of organized violence --- phenomena of
+lethal violence occurring at a given time and place.
 
-Format manuscripts two columns to a page, in the manner these
-instructions are formatted. The exact dimensions for a page on A4
-report are:
-
-\begin{itemize}
-\item Left and right margins: 2.5 cm
-\item Top margin: 2.5 cm
-\item Bottom margin: 2.5 cm
-\item Column width: 7.7 cm
-\item Column height: 24.7 cm
-\item Gap between columns: 0.6 cm
-\end{itemize}
-
-\noindent Papers should not be submitted on any other report size, no exceptions.
-
-
-\subsection{Fonts}
-
-For reasons of uniformity, Adobe's {\bf Times Roman} font should be
-used. In \LaTeX2e{} this is accomplished by putting
+There are 135,181 events present in the dataset covering the entirety of
+the globe (excluding Syria), spanning from 01/01/1989 to 31/12/2016.
+Events are further defined as follows:
 
 \begin{quote}
-\begin{verbatim}
-\usepackage{times}
-\usepackage{latexsym}
-\end{verbatim}
-\end{quote}
-in the preamble. If Times Roman is unavailable, use {\bf Computer
-  Modern Roman} (\LaTeX2e{}'s default).  Note that the latter is about
-  10\% less dense than Adobe's Times Roman font.
-
-
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{|l|rl|}
-\hline \bf Type of Text & \bf Font Size & \bf Style \\ \hline
-report title & 15 pt & bold \\
-author names & 12 pt & bold \\
-the word ``Abstract'' & 12 pt & bold \\
-section titles & 12 pt & bold \\
-document text & 11 pt  &\\
-captions & 11 pt & \\
-abstract text & 10 pt & \\
-bibliography & 10 pt & \\
-footnotes & 9 pt & \\
-\hline
-\end{tabular}
-\end{center}
-\caption{\label{font-table} Font guide.}
-\end{table}
-
-\subsection{The First Page}
-\label{ssec:first}
-
-Center the title and author's name(s) across both
-columns. Do not use footnotes for affiliations. Use the
-two-column format only when you begin the abstract.
-
-{\bf Title}: Place the title centered at the top of the first page, in
-a 15-point bold font. (For a complete guide to font sizes and styles,
-see Table~\ref{font-table}) Long titles should be typed on two lines
-without a blank line intervening. Approximately, put the title at 2.5
-cm from the top of the page, followed by a blank line, then the
-author's names(s) on the following line. Do not
-use only initials for given names (middle initials are allowed). Do
-not format surnames in all capitals (e.g., use ``Schlangen'' not
-``SCHLANGEN'').  Do not format title and section headings in all
-capitals as well except for proper names (such as ``BLEU'') that are
-conventionally in all capitals. Start the body of the first page 7.5 cm from the top of the
-page.
-
-{\bf Abstract}: Type the abstract at the beginning of the first
-column. The width of the abstract text should be smaller than the
-width of the columns for the text in the body of the report by about
-0.6 cm on each side. Center the word {\bf Abstract} in a 12 point bold
-font above the body of the abstract. The abstract should be a concise
-summary of the general thesis and conclusions of the report. It should
-be no longer than 150 words. The abstract text should be in 10 point font.
-
-{\bf Text}: Begin typing the main body of the text immediately after
-the abstract, observing the two-column format as shown in 
-the present document. Do not include page numbers.
-
-{\bf Indent} when starting a new paragraph. Use 11 points for text and 
-subsection headings, 12 points for section headings and 15 points for
-the title. 
-
-\subsection{Sections}
-
-{\bf Headings}: Type and label section and subsection headings in the
-style shown on the present document.  Use numbered sections (Arabic
-numerals) in order to facilitate cross references. Number subsections
-with the section number and the subsection number separated by a dot,
-in Arabic numerals. Do not number subsubsections.
-
-{\bf Citations}: Citations within the text appear in parentheses
-as~\cite{Gusfield:97} or, if the author's name appears in the text
-itself, as Gusfield~\shortcite{Gusfield:97}.  Append lowercase letters
-to the year in cases of ambiguity.  Treat double authors as
-in~\cite{Aho:72}, but write as in~\cite{Chandra:81} when more than two
-authors are involved. Collapse multiple citations as
-in~\cite{Gusfield:97,Aho:72}. Also refrain from using full citations
-as sentence constituents. We suggest that instead of
-\begin{quote}
-  ``\cite{Gusfield:97} showed that ...''
-\end{quote}
-you use
-\begin{quote}
-``Gusfield \shortcite{Gusfield:97}   showed that ...''
+An incident where armed force was by an organised actor against another
+organized actor, or against civilians, resulting in at least 1 direct
+death at a specific location and a specific date.
 \end{quote}
 
-If you are using the provided \LaTeX{} and Bib\TeX{} style files, you
-can use the command \verb|\newcite| to get ``author (year)'' citations.
+\subsection{Features}
 
-\textbf{Please do not use anonymous citations} and do not include
-acknowledgements when submitting your reports..
+The UDCP dataset contains many features that thoroughly document occurred
+events, but not all of which are utilized throughout this project. We
+will utilize and focus our attention on the following features: 
+\texttt{year}, \texttt{type\_of\_violence},
+(\texttt{1}: state-based conflict, \texttt{2}: non-state conflict, \texttt{3}: one-sided violence),
+\texttt{conflict\_name}, \texttt{side\_a}, \texttt{side\_b}, \texttt{country}, \texttt{region},
+\texttt{best\_est} (The most likely estimate of total fatalities resulting from an event.)
 
-\textbf{References}: Gather the full set of references together under
-the heading {\bf References}. Arrange the references alphabetically
-by first author, rather than by order of occurrence in the text.
-Provide as complete a citation as possible, using a consistent format,
-such as the one for {\em Computational Linguistics\/} or the one in the 
-{\em Publication Manual of the American 
-Psychological Association\/}~\cite{APA:83}.  Use of full names for
-authors rather than initials is preferred.  A list of abbreviations
-for common computer science journals can be found in the ACM 
-{\em Computing Reviews\/}~\cite{ACM:83}.
+This project makes use of the events which ocurred in the African region
+throughout the period of 26 years (1990--2015), or roughly 35,437 events.
 
-\subsection{Footnotes}
+\section{Freedom House dataset}
 
-{\bf Footnotes}: Put footnotes at the bottom of the page and use 9
-points text. They may be numbered or referred to by asterisks or other
-symbols.\footnote{This is how a footnote should appear.} Footnotes
-should be separated from the text by a line.\footnote{Note the line
-separating the footnotes from the text.}
+Freedom House is a U.S.-based U.S. Government-funded non-governmental
+organization (NGO) that conducts research and advocacy on democracy,
+political freedom, and human rights.
 
-\subsection{Graphics}
+The Organisation's reports on the state of country's political freedoms and
+civil liberties form our second dataset.
+We will focus our attention on data
+which contains information about political freedom and civil liberties
+scores for individual countries throughout the period of 1972--2016.
+Moreover, we are only interested in the scores of African countries
+throughout the period of 1990--2015.
 
-{\bf Illustrations}: Place figures, tables, and photographs in the
-report near where they are first discussed, rather than at the end, if
-possible.  Wide illustrations may run across both columns.
+\subsection{Features}
 
-{\bf Captions}: Provide a caption for every illustration; number each one
-sequentially in the form:  ``Figure 1. Caption of the Figure.'' ``Table 1.
-Caption of the Table.''  Type the captions of the figures and 
-tables below the body, using 11 point text.
+Political rights and civil liberties are measured on a one-to-seven
+scale, with one representing the highest degree of freedom and seven the
+lowest.
 
-\begin{thebibliography}{}
+\subsection{Missing rankings}
 
-\bibitem[\protect\citename{Aho and Ullman}1972]{Aho:72}
-Alfred~V. Aho and Jeffrey~D. Ullman.
-\newblock 1972.
-\newblock {\em The Theory of Parsing, Translation and Compiling}, volume~1.
-\newblock Prentice-{Hall}, Englewood Cliffs, NJ.
+Through the observed period, several countries have become independent,
+split into two or more countries, or merged with a neighboring state.
+Scores for these countries are given only for the period of their
+existence as independent states.
 
-\bibitem[\protect\citename{{American Psychological Association}}1983]{APA:83}
-{American Psychological Association}.
-\newblock 1983.
-\newblock {\em Publications Manual}.
-\newblock American Psychological Association, Washington, DC.
+\section{Human Development Index}
 
-\bibitem[\protect\citename{{Association for Computing Machinery}}1983]{ACM:83}
-{Association for Computing Machinery}.
-\newblock 1983.
-\newblock {\em Computing Reviews}, 24(11):503--512.
+The Human Development Index (HDI) is a composite statistic (composite
+index) of life expectancy, education, and per capita income indicators,
+which are used to rank countries into four tiers of human development. A
+country scores higher HDI when the lifespan is higher, the education
+level is higher, and the GDP per capita is higher.
 
-\bibitem[\protect\citename{Chandra \bgroup et al.\egroup }1981]{Chandra:81}
-Ashok~K. Chandra, Dexter~C. Kozen, and Larry~J. Stockmeyer.
-\newblock 1981.
-\newblock Alternation.
-\newblock {\em Journal of the Association for Computing Machinery},
-  28(1):114--133.
+The Human Development Index is a value in the range ${[}0,1{]}$, with 1 designating
+the best possible value.
 
-\bibitem[\protect\citename{Gusfield}1997]{Gusfield:97}
-Dan Gusfield.
-\newblock 1997.
-\newblock {\em Algorithms on Strings, Trees and Sequences}.
-\newblock Cambridge University Press, Cambridge, UK.
+\section{Map data}
+Map visualizations throughout the project make use of the africa.json file which maps African countries, available under MIT license by the author David Eldersveld~\cite{Eldersveld2017}.
 
-\end{thebibliography}
+\section{Findings}
+
+\subsection{North Africa}
+Throughout the early 90s Algeria is the main contributor of conflict in terms of number of conflicts, due to the Algerian Civil War, which spans more than a decade from 1991 to 2002. The largest contributor by number of deaths is Sudan, which also experiences a civil war in the timespan from 1983 to 2005. In this timeframe, political rights and civil liberties remain poor, but interestingly the HDI is steadily increasing, seemingly unaffected by any major conflict in the region.
+
+Violence events of type 1 and 3 do not seem to have much effect on our indicator variables, judging by the low correlation scores, but violence events of type 2 appear to have some connection to civil liberty and HDI, albeit not the one expected. In both cases, the correlation is exactly opposite to what you would expect: A high number of type 2 violence is positively correlated with HDI, and negatively correlated with the civil liberty score. In the case of HDI this might simply be coincidence, given that the development of the metric is so stable. But regarding the civil liberty score there is an interesting possible interpretation: Civil liberty often has to be fought for. Looking at the period following the Arab Spring between 2010 and 2015 yields further evidence for this idea. A peak in violence is followed by an improvement in civil liberties as well as political rights.
+
+\subsection{East Africa}
+We can make a similar observation for East Africa as for North Africa: Violence and HDI are positively correlated while violence and political rights or civily liberty are negatively correlated. This time the strongest positive correlation is between violence of type 1 and HDI\@. As before, the HDI on average appears to be a reliably growing metric, while civil liberty and political rights have been improving right until the year 2008, after which they started deteriorating again.
+
+One thing to take into consideration is that Rwanda skews the numbers heavily in 1994, owing to the Rwandan genocide taking place in that year. Remarkably, Rwanda made a steep recovery following this tragic event, we can see their HDI rising from less than 0.2 to nearly 0.5 in the years following 1994, while the occurence of violent events is steadily declining.
+
+The the recent negative regional trend in civily liberty and political rights is due to the fact that many countries in the region have been experiencing conflicts and political instabilities. Notable examples are Eritrea and Ethiopia who, following the Eritrean-Ethiopian War from 1998 to 2000, have seen a consistent deterioration of civil liberties and political rights. Other contributors to this trend are Uganda, Burundu, South Sudan and Djibouti.
+
+\subsection{South Africa}
+
+South Africa breaks the pattern that we have observed thus far. HDI, while starting out higher than in both previous regions, is mostly decreasing from 1990 to 2002, but then starts going back up. It correlates most with violence of type 1 ($\rho = -0.49$) which would make sense assuming that less conflict leads to higher life expectancy, better eduction and a higher GDP\@. At the same time, civil liberty and political rights show mostly positive correlations with violence of types 2 and 3, suggesting that more violence of those types lead to higher (worse) scores.
+
+The conflict numbers are almost entirely based on the data from South Africa (country, not region), as the data for the remaining countries is either missing, spotty or insignificant in magnitude. South African countries have been dearly affected by an HIV epidemic in the 90s and early 2000s, which is most likely the reason for the strong downward trend in the HDI curve of that region.
+
+\subsection{West Africa}
+The most apparent connection appears to be between violence of type 2 and all three indicator variables. This is a pattern that we have observed before in North and East Africa: Non state violence coinciding with an improvement in both HDI and civil liberties / political rights. 
+
+We must point out that Nigeria dominates the statistic when it comes violence in this region, especially in recent years with the advent of the terrorist group `Boko Haram' it has seen a sharp rise in state based and one sided violence.
+
+\subsection{Central Africa}
+Perhaps the most interesting aspect of the data for central Africa, is the fact that the correlation between HDI and both civil liberties and political rights is high and positive, indicating that while living conditions have improved, the regional political situation overall has become worse at a similar rate. Considering that many of the countries in this region are ruled by de facto dictators, who have been holding on to power for decades, these numbers are not very surprising.
+
+\subsection{Case Study: Zimbabwe}
+
+\section{Conclusion}
+
+%{\bf Citations}: Citations within the text appear in parentheses
+%as~\cite{Gusfield:97} or, if the author's name appears in the text
+%itself, as Gusfield~\shortcite{Gusfield:97}.  Append lowercase letters
+%to the year in cases of ambiguity.  Treat double authors as
+%in~\cite{Aho:72}, but write as in~\cite{Chandra:81} when more than two
+%authors are involved. Collapse multiple citations as
+%in~\cite{Gusfield:97,Aho:72}. Also refrain from using full citations
+%as sentence constituents. We suggest that instead of
+%\begin{quote}
+%  ``\cite{Gusfield:97} showed that ...''
+%\end{quote}
+%you use
+%\begin{quote}
+%``Gusfield \shortcite{Gusfield:97}   showed that ...''
+%\end{quote}
+
+%If you are using the provided \LaTeX{} and Bib\TeX{} style files, you
+%can use the command \verb|\newcite| to get ``author (year)'' citations.
+%
+%\textbf{References}: Gather the full set of references together under
+%the heading {\bf References}. Arrange the references alphabetically
+%by first author, rather than by order of occurrence in the text.
+%Provide as complete a citation as possible, using a consistent format,
+%such as the one for {\em Computational Linguistics\/} or the one in the 
+%{\em Publication Manual of the American 
+%Psychological Association\/}~\cite{APA:83}.  Use of full names for
+%authors rather than initials is preferred.  A list of abbreviations
+%for common computer science journals can be found in the ACM 
+%{\em Computing Reviews\/}~\cite{ACM:83}.
+%
+%\subsection{Footnotes}
+%
+%{\bf Footnotes}: Put footnotes at the bottom of the page and use 9
+%points text. They may be numbered or referred to by asterisks or other
+%symbols.\footnote{This is how a footnote should appear.} Footnotes
+%should be separated from the text by a line.\footnote{Note the line
+%separating the footnotes from the text.}
+%
+%\subsection{Graphics}
+%
+%{\bf Captions}: Provide a caption for every illustration; number each one
+%sequentially in the form:  ``Figure 1. Caption of the Figure.'' ``Table 1.
+%Caption of the Table.''  Type the captions of the figures and 
+%tables below the body, using 11 point text.
+
+
+\bibliographystyle{acl}
+\bibliography{ada2017}
 
 \end{document}
