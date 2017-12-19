@@ -1,5 +1,9 @@
 # Applied Data Analysis - Project
 
+Hrvoje Busic - Problem formulation, project planning and workload distribution; map visualizations with interactive elements; report proofreading.
+Domenica Verbaro - Crawling the data; data pruning; data visualization via plots; report visualizations.
+Joey Zenhäusern - Code modularization and pruning; writing up the report; reference checkup.
+
 ## Abstract
 
 The age of information makes it seem as though conflict and wars are, and always will be, ever growing part of our lives. We often feel overwhelmed by the amount and scope of information that is accessible and directed towards us, in turn rendering us indifferent to the consequences and casualties of the war.
