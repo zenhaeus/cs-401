@@ -1,5 +1,7 @@
 # Applied Data Analysis - Project
 
+Notebook best viewed on: [NBViewer](http://nbviewer.jupyter.org/github/zenhaeus/cs-401/blob/master/project/Project%20-%20report.ipynb)
+
 ## Abstract
 
 The age of information makes it seem as though conflict and wars are, and always will be, ever growing part of our lives. We often feel overwhelmed by the amount and scope of information that is accessible and directed towards us, in turn rendering us indifferent to the consequences and casualties of the war.
